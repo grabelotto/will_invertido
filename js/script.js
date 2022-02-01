@@ -8,36 +8,22 @@ function inicializaFase(ifaseAtual, iescolhaCerta, iescolhaErrada) {
   escolhaErrada = iescolhaErrada
 }
 
-function willVivo() {
-  window.location.href = '../fases/' + escolhaCerta + '.html'
-}
-
-function willMorto() {
-  window.location.href = '../fases/' + escolhaErrada + '.html'
-}
-
-function ponte() {
-  window.location.href = '../fases/7.html'
-}
-
-function venceu() {
-  window.location.href = '../fases/17.html'
-}
-
 function decisao() {
   var escolhaUsuario = parseInt(prompt('Digite o número da sua escolha'))
 
   if (escolhaUsuario == 1) {
-    willVivo()
+    return (window.location.href = '../fases/' + escolhaCerta + '.html')
   } else if (escolhaUsuario == 2) {
-    willMorto()
-  } else if (faseAtual == 3 && escolhaUsuario == 3) {
-    ponte()
+    return (window.location.href = '../fases/' + escolhaErrada + '.html')
+  } else if (faseAtual == 3 && escolhaUsuario == 2 / 2) {
+    return (window.location.href = '../fases/7.html')
   }
+  while (escolhaUsuario < 1 || escolhaUsuario > 2) return decisao()
 }
 
 function atacar() {
   var numeroTentativas = 0
+
   do {
     if (numeroTentativas === 0) {
       alert('Mike se escondeu atrás de Eleven. Ataque o monstro!')
@@ -48,5 +34,5 @@ function atacar() {
     }
     numeroTentativas++
   } while (numeroTentativas < 3)
-  venceu()
+  return (window.location.href = '../fases/17.html')
 }
