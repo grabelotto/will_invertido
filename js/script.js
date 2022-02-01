@@ -21,7 +21,7 @@ function ponte() {
 }
 
 function venceu() {
-  window.location.href = '../17.html'
+  window.location.href = '../fases/17.html'
 }
 
 function decisao() {
