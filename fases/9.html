@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo do Will</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <figure>
+        <center><img src="../imagens/willinvertido.png" /></center>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <center><img src="../imagens/ponte.png" /></center>
+      </figure>
+      <p>
+        Eleven leva o amigo até uma ponte e encontra duas imagens de Mike.<br />
+        Uma no começo e outra no final da ponte.<br />
+        Ambos diziam que o outro era uma ilusão. <br />
+        Eleven pensou e perguntou:<br />
+        "O que você me prometeu?"<br />
+        "Eu só vou amar você!", disse Mike_do_Começo.<br />
+        "Eu não posso te perder!", disse Mike_do_Fim.<br />
+      </p>
+      <script></script>
+      <p id="pergunta">Qual deles disse a resposta certa?</p>
+      <p id="resposta">
+        1 - Mike_do_Fim<br />
+        2 - Mike_do_Começo<br />
+      </p>
+    </div>
+    <center><button type="button" onclick="decisao()">Decida!</button></center>
+    <footer>
+      <center>
+        Desenvolvedor: Graziela Belotto<br />
+        Contato: grabelotto@gmail.com
+      </center>
+    </footer>
+    <script>
+      inicializaFase(9, 15, 8)
+    </script>
+  </body>
+</html>

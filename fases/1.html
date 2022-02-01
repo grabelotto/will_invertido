@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo do Will</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <figure>
+        <center><img src="../imagens/willinvertido.png" /></center>
+        <center><img src="../imagens/upsidedown.jpg" /></center>
+      </figure>
+    </div>
+
+    <div>
+      <p>
+        Galhos retorcidos debruçam-se no chão seco, parece difícil respirar.<br />
+        Will se vê diante de uma floresta escura e enevoada.<br />
+        Ele caminha alguns metros e encontra um frasco e um ponto luminoso.
+      </p>
+      <p id="pergunta">Você bebe o frasco ou investiga o ponto luminoso?</p>
+      <p id="resposta">
+        1 - ponto luminoso<br />
+        2 - frasco<br />
+      </p>
+    </div>
+    <center><button type="button" onclick="decisao()">Decida!</button></center>
+    <footer>
+      <center>
+        Desenvolvedor: Graziela Belotto<br />
+        Contato: grabelotto@gmail.com
+      </center>
+    </footer>
+    <script>
+      inicializaFase(1, 3, 2)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo do Will</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <figure>
+        <center><img src="../imagens/willinvertido.png" /></center>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <center><img src="../imagens/eleven.jpg" /></center>
+      </figure>
+      <p>
+        Dentro da casa ele escuta a voz de Eleven.<br />
+        "Will? Se você quiser, posso guiar sua mente para fora daí"<br />
+        Will ficou inseguro. Seria a Eleven de verdade?<br />
+      </p>
+      <p id="pergunta">Você continua o jogo com Will ou Eleven?</p>
+      <p id="resposta">
+        1 - Eleven<br />
+        2 - Will<br />
+      </p>
+    </div>
+    <center><button type="button" onclick="decisao()">Decida!</button></center>
+    <footer>
+      <center>
+        Desenvolvedor: Graziela Belotto<br />
+        Contato: grabelotto@gmail.com
+      </center>
+    </footer>
+    <script>
+      inicializaFase(5, 9, 4)
+    </script>
+  </body>
+</html>

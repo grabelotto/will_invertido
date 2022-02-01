@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo do Will</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js"></script>
+  </head>
+  <body>
+    <div>
+      <figure>
+        <center><img src="../imagens/willinvertido.png" /></center>
+      </figure>
+    </div>
+    <br />
+    <div>
+      <figure>
+        <center><img src="../imagens/cajado.png" /></center>
+      </figure>
+      <p>
+        Will encontra uma espécie de cajado com uma pedra brilhante.<br />
+        Ele se sente como um típico mago de D&D.<br />
+        Será que teria poderes no Mundo Invertido?<br />
+        Deu umas agitadas no ar e uma luz branca iluminou dois caminhos!<br />
+        Um deles guiava para uma casa e o outro para uma ponte.<br />
+      </p>
+      <p id="pergunta">Você entra na casa ou vai até a ponte?</p>
+      <p id="resposta">
+        1 - casa<br />
+        3 - ponte<br />
+      </p>
+    </div>
+    <center><button type="button" onclick="decisao()">Decida!</button></center>
+    <footer>
+      <center>
+        Desenvolvedor: Graziela Belotto<br />Contato: grabelotto@gmail.com
+      </center>
+    </footer>
+    <script>
+      inicializaFase(3, 5, 7)
+    </script>
+  </body>
+</html>
