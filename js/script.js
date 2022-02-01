@@ -39,8 +39,14 @@ function decisao() {
 function atacar() {
   var numeroTentativas = 0
   do {
-    var escolhaUsuario = alert('Ataque o monstro!')
-    numeroTentativas += 1
+    if (numeroTentativas === 0) {
+      alert('Ataque o monstro!')
+    } else if (numeroTentativas === 1) {
+      alert('Eleven deu uma pancada telecinética! Ataque novamente')
+    } else if (numeroTentativas === 2) {
+      alert('Will deu um golpe com seu cajado! Ataque novamente')
+    }
+    numeroTentativas++
   } while (numeroTentativas < 3)
   venceu()
 }
