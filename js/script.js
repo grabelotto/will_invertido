@@ -9,16 +9,18 @@ function inicializaFase(ifaseAtual, iescolhaCerta, iescolhaErrada) {
 }
 
 function decisao() {
-  var escolhaUsuario = parseInt(prompt('Digite o número da sua escolha'))
+  var escolhaUsuario = Number(prompt('Digite o número da sua escolha'))
 
   if (escolhaUsuario == 1) {
     return (window.location.href = '../fases/' + escolhaCerta + '.html')
   } else if (escolhaUsuario == 2) {
     return (window.location.href = '../fases/' + escolhaErrada + '.html')
-  } else if (faseAtual == 3 && escolhaUsuario == 2 / 2) {
+  } else if (faseAtual == 3 && escolhaUsuario == 2) {
     return (window.location.href = '../fases/7.html')
+  } else {
+    alert('Digite o que está sendo pedido')
   }
-  while (escolhaUsuario < 1 || escolhaUsuario > 2) return decisao()
+  while (escolhaUsuario != 1 || escolhaUsuario != 2) return decisao()
 }
 
 function atacar() {
